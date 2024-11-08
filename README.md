@@ -24,7 +24,7 @@ Session Handling: Express-Session
 Installation
 Clone the repository:
 
-git clone https://github.com/luka003-hub/tele_medicine.git
+git clone https://github.com/tembeh/tele_med.git
 cd tele_medicine
 
 
