@@ -1,0 +1,290 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logincontainer, .signupcontainer {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+        border-radius: 10px}
+        
+/* Body and Global Styles */
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+/* Header */
+header {
+    background-color: #004d40;
+    color: white;
+    max-height: 150px;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(3, 197, 52, 0.301);
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto; /* Allow width to adjust as needed */
+    height: 150px; /* Allow height to adjust as needed */
+    border-radius: 80%; 
+    object-fit: cover; 
+    overflow: hidden; 
+}
+
+.logo a {
+    display: flex;
+}
+
+
+.brand-name {
+    position: absolute;
+    top: 50px; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+/* Style for the navigation */
+header nav {
+    flex: 1; 
+}
+
+header nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: flex-end; 
+    margin: 0; 
+    padding: 0; 
+}
+header nav ul li {
+    margin-left: 15px; 
+    
+}
+
+header nav ul li a {
+    color: #fff; 
+    text-decoration: none; 
+    padding: 5px; 
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; 
+}
+/* Hero Section */
+.hero {
+   
+    background-image: url('/images/tele5.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(152, 148, 161);
+    text-align: center;
+    margin-bottom: 110px;
+    padding: 100px 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-slider {
+    display: flex;
+    animation: slide 20s infinite; 
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%; 
+    height: auto; 
+    max-height: 100%; 
+    object-fit: cover; 
+    transition: opacity 1s ease-in-out;
+}
+
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(0); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(0); }
+    100% { transform: translateX(0); }
+}
+
+.hero button {
+    background-color: #4CAF50;
+    color: rgb(107, 39, 128);
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #45a049;
+}
+
+.services { 
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 100px; 
+}
+
+.services-container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+
+.service-item {
+    flex: 1;
+    min-width: 250px; 
+    max-width: 300px; 
+    padding: 20px;
+    background-color: #f8f8f8; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.service-item img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.service-item p {
+    font-size: 1em;
+    color: #666;
+}
+
+
+/* Doctor Profiles */
+.doctors-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #f5f5f5; 
+    margin: 20px 0;    
+    font-size: 2rem;    
+    font-weight: bold;  
+    color: #333;     
+}
+
+.doctors-section h2 {
+    margin-bottom: 40px;
+}
+
+.doctor-card {
+    display: inline-block;
+    background-color: white;
+    padding: 20px;
+    gap: 40px;
+    margin: 15px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.doctor-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.doctor-card h3 {
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.doctor-card p {
+    color: #666;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #c0e4d8;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .doctor-card {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,84 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the body */
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #e9f0f5;
+}
+
+/* Main appointments container */
+.appointments-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 90%;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+/* Header styling */
+.appointments-container h1 {
+    font-size: 1.8rem;
+    color: #0056a6;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Styling each appointment card */
+.appointment-card {
+    background-color: #f6faff;
+    border: 1px solid #d6e4ed;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for appointment cards */
+.appointment-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Appointment header */
+.appointment-header {
+    font-size: 1.1rem;
+    color: #0056a6;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* Styling individual appointment details */
+.appointment-detail {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.appointment-detail span {
+    font-weight: bold;
+    color: #007acc;
+}
+
+/* Message styling for no appointments */
+.appointments-container p {
+    font-size: 1.1rem;
+    color: #777;
+    margin-top: 20px;
+}

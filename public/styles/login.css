@@ -1,0 +1,120 @@
+/* Overall page background */
+body {
+    background-image: url('/images/tele9.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+}
+
+/* Login container */
+
+.container {
+    width: 80%; 
+    max-width: 1200px; 
+    min-height: 70vh; 
+    background-color: #16a167; 
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: center;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; 
+        padding: 1.5rem; 
+    }
+}
+
+/* Style for input fields like email and password */
+input[type="email"],
+input[type="password"] {
+    width: 300%; 
+    max-width: 500px; 
+    padding: 15px; 
+    margin: 10px 0; 
+    border: 1px solid #c4a0a0; 
+    border-radius: 5px; 
+    font-size: 18px; 
+    box-sizing: border-box; 
+    outline: none; 
+}
+/* Login form header */
+h2 {
+    text-align: center;
+    color: #ff0037; 
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+}
+
+/* Form styling */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border-radius: 4px;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: #229627;
+    border: none;
+    padding: 0.75rem;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Additional login options */
+.text-center {
+    margin-top: 1.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+    }
+}

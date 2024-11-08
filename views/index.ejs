@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BETA TELEMEDICS</title>
+    <!-- Link to main.css for styling -->
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Your Health, Our Priority</h1>
+                <p>Connect with certified doctors anytime, anywhere.</p>
+                <a href="/book-appointment" class="btn-primary">Book an Appointment</a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services">
+            <h2>Our Services</h2>
+            
+            <div class="services-container">
+                <div class="service-item">
+                    <img src="/images/tele6.jpg" alt="Consultation image">
+                    <h3>Online Consultations</h3>
+                    <p>Speak with our medical professionals from the comfort of your home.</p>
+                </div>
+                <div class="service-item">
+                    <img src="/images/tele8.jpg" alt="Diagnostics image">
+                    <h3>Diagnostics</h3>
+                    <p>Get access to reliable lab diagnostics and health reports.</p>
+                </div>
+                <div class="service-item">
+                    <img src="/images/tele4.jpg" alt="Prescriptions image">
+                    <h3>Prescription Services</h3>
+                    <p>Receive prescriptions digitally and get medications delivered to your door.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Doctors Section -->
+        <section class="featured-doctors">
+            <h2>Meet our Team</h2>
+            <div class="doctors-container">
+                <div class="doctor-card">
+                    <img src="/images/tosh.jpg" alt="Doctor">
+                    <h3>Dr. James Gitonga</h3>
+                    <p>Dental Technologist</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="/images/mubarak.jpg" alt="Doctor">
+                    <h3>Dr. George Gitonga</h3>
+                    <p>Dentist</p>
+                </div>
+                <div class="doctor-card">
+                    <img src="/images/jm.jpg" alt="Doctor">
+                    <h3>Dr. John Murebi</h3>
+                    <p>Physiotherapist</p>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta">
+            <h2>Ready to take control of your health?</h2>
+            <a href="/signup" class="btn-primary">Join Us Today</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <%= new Date().getFullYear() %> Telemedicine Platform. All Rights Reserved.</p>
+            <ul>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>
+                <li><a href="/terms">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

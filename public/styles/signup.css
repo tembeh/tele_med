@@ -1,0 +1,70 @@
+/* Full-screen background image */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('/images/3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the signup form container */
+.signup-container {
+    max-width: 600px;
+    width: 100%;
+    background-color: rgba(17, 116, 155, 0.85); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the input fields */
+.signup-container input[type="text"],
+.signup-container input[type="email"],
+.signup-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Styling the labels */
+.signup-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styling the button */
+.signup-container button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.signup-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Center the form vertically and horizontally */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 30px;
+}
